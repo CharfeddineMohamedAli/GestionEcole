@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="id_page_ajout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="850.0" style="-fx-background-color: #05071F;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AjouterSujetController">
+   <children>
+      <Label layoutX="268.0" layoutY="24.0" prefHeight="56.0" prefWidth="258.0" text="Ajouter un sujet" textFill="#ebb8b8">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="123.0" prefHeight="23.0" prefWidth="92.0" text="Titre" textFill="#e7e5e5">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="236.0" prefHeight="27.0" prefWidth="102.0" text="Description" textFill="#e7e5e5">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="f_titre" layoutX="131.0" layoutY="125.0" prefHeight="25.0" prefWidth="363.0" styleClass="text-area" stylesheets="@style.css" unFocusColor="#4d4646" />
+      <JFXButton fx:id="id_add" layoutX="281.0" layoutY="437.0" onAction="#add" prefHeight="36.0" prefWidth="190.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparent;" styleClass="item_button" stylesheets="@style.css" text="Ajouter">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextArea fx:id="id_description" layoutX="131.0" layoutY="227.0" onKeyReleased="#verifier_description" prefHeight="36.0" prefWidth="363.0" styleClass="text-area" stylesheets="@stylesheet.css" />
+      <Label layoutX="20.0" layoutY="324.0" prefHeight="26.0" prefWidth="92.0" text="Categorie" textFill="#e7e5e5">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="id_categorie" layoutX="134.0" layoutY="325.0" onMousePressed="#verifier_categorie" prefHeight="25.0" prefWidth="363.0" promptText="  Chosissez une categorie ..." style="-fx-background-color: #cad1e4;" />
+      <Label fx:id="id_verifier_titre" layoutX="550.0" layoutY="122.0" prefHeight="30.0" prefWidth="190.0" textFill="#f8f7f7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="id_verifier_description" layoutX="541.0" layoutY="235.0" prefHeight="30.0" prefWidth="190.0" textFill="#f8f7f7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="id_verifier_categorie" layoutX="550.0" layoutY="323.0" prefHeight="30.0" prefWidth="190.0" textFill="#f8f7f7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
