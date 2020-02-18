@@ -1,0 +1,16 @@
+package Controller;
+
+import com.jfoenix.controls.JFXComboBox;
+import javafx.fxml.FXML;
+
+public class ReclamationController {
+
+    @FXML
+    private JFXComboBox<?> type;
+
+    @FXML
+    void choisirType(ActionEvent event) {
+
+    }
+
+}

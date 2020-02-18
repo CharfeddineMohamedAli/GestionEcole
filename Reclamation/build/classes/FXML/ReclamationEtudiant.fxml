@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="200.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Controller.ReclamationController">
+    <stylesheets>
+        <URL value="@/FXML/Res/reclamationetudiant.css" />
+    </stylesheets>
+   <children>
+      <JFXTextField alignment="CENTER" disable="true" editable="false" layoutX="233.0" layoutY="24.0" text="Etudiant" AnchorPane.topAnchor="24.0" />
+      <JFXButton layoutX="61.0" layoutY="101.0" text="Reclamation" />
+      <JFXButton layoutX="207.0" layoutY="101.0" text="Emploi" />
+      <JFXButton layoutX="342.0" layoutY="101.0" text="Reglages" />
+      <JFXButton layoutX="479.0" layoutY="101.0" text="Exit" />
+   </children>
+</AnchorPane>
