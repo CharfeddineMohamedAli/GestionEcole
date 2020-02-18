@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="507.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Affichage_note_ens_controller">
+   <children>
+      <Label layoutX="179.0" layoutY="71.0" prefHeight="21.0" prefWidth="61.0" text="Matiére :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="262.0" layoutY="67.0" prefHeight="25.0" prefWidth="95.0" promptText="info" />
+      <TableView fx:id="table" layoutX="84.0" layoutY="153.0" prefHeight="332.0" prefWidth="507.0">
+         <columns>
+            <TableColumn fx:id="nom_etud" prefWidth="114.0" text="Nom étudiant" />
+            <TableColumn fx:id="prenom_etud" prefWidth="128.0" text="prénom étudiant" />
+            <TableColumn fx:id="cin" minWidth="0.0" prefWidth="64.0" text="Cin" />
+            <TableColumn fx:id="cc" minWidth="0.0" prefWidth="59.0" text="Note cc" />
+            <TableColumn fx:id="ds" minWidth="0.0" prefWidth="57.0" text="Note ds" />
+            <TableColumn fx:id="exam" minWidth="0.0" prefWidth="88.0" text="Note examen" />
+         </columns>
+      </TableView>
+       <Pane layoutY="533.0" prefHeight="54.0" prefWidth="675.0" style="-fx-background-color: #6A35A2;" />
+   </children>
+</AnchorPane>
