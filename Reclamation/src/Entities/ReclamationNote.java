@@ -18,6 +18,15 @@ public class ReclamationNote {
     User user;
     Note note;
     EtatReclamation etat;
+    int id_note;
+
+    public void setId_note(int id_note) {
+        this.id_note = id_note;
+    }
+
+    public int getId_note() {
+        return id_note;
+    }
 
     public ReclamationNote() {
     }
@@ -29,7 +38,6 @@ public class ReclamationNote {
         this.etat = etat;
     }
 
-    
     public ReclamationNote(int id_RecNote, String desc, User user, Note note, EtatReclamation etat) {
         this.id_RecNote = id_RecNote;
         this.desc = desc;
@@ -82,5 +90,5 @@ public class ReclamationNote {
     public String toString() {
         return "ReclamationNote{" + "id_RecNote=" + id_RecNote + ", desc=" + desc + ", user=" + user + ", note=" + note + ", etat=" + etat + '}';
     }
-    
+
 }

@@ -7,14 +7,12 @@ package reclamation;
  */
 import Entities.User;
 import FXML.ClassLoaderFXML;
-import Services.ReclamationService;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -26,21 +24,17 @@ import javafx.stage.Stage;
  * @author KattaX
  */
 public class ReclamationApp extends Application {
-      public static  User u = new User();
+
+    public static User u = new User();
 
     @Override
     public void start(Stage primaryStage) {
         //DataSource.getInstance();
-        Button btn = new Button();
-        btn.setText("Say 'Hello World'");
-        btn.setOnAction((ActionEvent event) -> {
-            System.out.println("Hello World!");
-        });
 
         //StackPane root = new StackPane();
         Parent root = null;
         try {
-            root = FXMLLoader.load(ClassLoaderFXML.class.getResource("/FXML/Reclamation.fxml"));
+            root = FXMLLoader.load(ClassLoaderFXML.class.getResource("/FXML/HomeReclamation.fxml"));
             //root.getChildren().add(btn);
         } catch (IOException ex) {
             Logger.getLogger(ReclamationApp.class.getName()).log(Level.SEVERE, null, ex);
@@ -48,7 +42,7 @@ public class ReclamationApp extends Application {
 
         Scene scene = new Scene(root);
 
-        primaryStage.setTitle("Hello World!");
+        primaryStage.setTitle("Espace Reclamation!");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
@@ -58,8 +52,7 @@ public class ReclamationApp extends Application {
      */
     public static void main(String[] args) throws SQLException {
         launch(args);
-        
-       
+
     }
 
 }

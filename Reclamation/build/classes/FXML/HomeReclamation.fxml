@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" fx:id="content" prefHeight="314.0" prefWidth="398.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Controller.HomeReclamationController">
+   <children>
+      <JFXButton fx:id="consulterBtn" layoutX="166.0" layoutY="115.0" onAction="#consulter" text="Consulter" />
+      <JFXButton fx:id="addBtn" layoutX="172.0" layoutY="169.0" onAction="#ajouter" text="Ajouter" />
+      <JFXButton fx:id="btnDcx" layoutX="283.0" layoutY="256.0" onAction="#deconnecter" text="Deconnecter" />
+      <Text layoutX="147.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Espace Reclamation" />
+   </children>
+</AnchorPane>

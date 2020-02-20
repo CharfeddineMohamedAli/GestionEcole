@@ -13,14 +13,16 @@ package Entities;
 public class Etudiant extends User {
     int type = 1;
     public int id_classe;
+    public String classe;
 
     public Etudiant() {
         super();
     }
 
-    public Etudiant( int id_user, String first_Name, String last_Name, String user_Name, String password, String email, int phone_number, String gender, int CIN, String account_Date, String Image_user, int age,int id_classe,int type) {
-        super(id_user, first_Name, last_Name, user_Name, password, email, phone_number, gender, CIN, account_Date, Image_user, age);
+    public Etudiant( int id_user, String first_Name, String last_Name, String user_Name,String classe, String password, String email, int phone_number, String gender, int CIN, String account_Date, String Image_user, int age,int id_classe,int type) {
+        super(id_user, first_Name, last_Name, user_Name,classe, password, email, phone_number, gender, CIN, account_Date, Image_user, age);
         this.id_classe = id_classe;
+        this.classe=classe;
         this.type=1;
     }
 
@@ -30,6 +32,14 @@ public class Etudiant extends User {
 
     public void setId_classe(int id_classe) {
         this.id_classe = id_classe;
+    }
+
+    public String getClasse() {
+        return classe;
+    }
+
+    public void setClasse(String classe) {
+        this.classe = classe;
     }
 
     public int getType() {
@@ -42,8 +52,10 @@ public class Etudiant extends User {
 
     @Override
     public String toString() {
-        return "Etudiant{" + "type=" + type + ", id_classe=" + id_classe + '}';
+        return "Etudiant{" + "type=" + type + ", id_classe=" + id_classe + ", classe=" + classe + '}';
     }
+
+   
     
     
 }

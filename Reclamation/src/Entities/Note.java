@@ -45,8 +45,6 @@ public class Note {
         return notes;
     }
 
- 
-
     public int getId_classe() {
         return id_classe;
     }
@@ -71,8 +69,6 @@ public class Note {
         this.matiere = matiere;
     }
 
- 
-
     public void setId_classe(int id_classe) {
         this.id_classe = id_classe;
     }
@@ -85,6 +81,9 @@ public class Note {
         this.type = type;
     }
 
-
+    @Override
+    public String toString() {
+        return "Note{" + "id_note=" + id_note + ", user=" + user + ", notes=" + notes + ", matiere=" + matiere + ", id_classe=" + id_classe + ", type=" + type + '}';
+    }
 
 }

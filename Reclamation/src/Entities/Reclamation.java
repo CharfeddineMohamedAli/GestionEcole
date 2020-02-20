@@ -16,6 +16,7 @@ public class Reclamation {
     int id;
     String desc;
     EtatReclamation etat;
+    String sujet;
     User user;
 
     public Reclamation() {
@@ -73,6 +74,16 @@ public class Reclamation {
     public void setId(int id) {
         this.id = id;
     }
+
+    public void setSujet(String sujet) {
+        this.sujet = sujet;
+    }
+
+    public String getSujet() {
+        return sujet;
+    }
+    
+    
 
     @Override
     public String toString() {

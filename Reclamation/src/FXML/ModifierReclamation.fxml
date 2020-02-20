@@ -6,13 +6,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AjouterRecNoteController">
-   <children>
-      <TextField fx:id="id_champ" layoutX="34.0" layoutY="122.0" prefHeight="156.0" prefWidth="326.0" />
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ModifierReclamationController">
+    <children>
+      <TextField fx:id="descriptionTxt" layoutX="34.0" layoutY="122.0" prefHeight="156.0" prefWidth="326.0" />
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
       <Text layoutX="34.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remplir la description" wrappingWidth="154.13671875" />
-      <Button fx:id="envoie" layoutX="382.0" layoutY="122.0" mnemonicParsing="false" onAction="#envoyer" text="Envoyer" />
+      <Button fx:id="envoie" layoutX="382.0" layoutY="122.0" mnemonicParsing="false" onAction="#envoyer" text="Modifier" />
       <Button layoutX="34.0" layoutY="291.0" mnemonicParsing="false" onAction="#clearText" text="Clear Texte" />
       <JFXTextField fx:id="subjectTxt" layoutX="34.0" layoutY="46.0" prefHeight="25.0" prefWidth="326.0" promptText="Sujet" visible="false" />
+      <Text layoutX="243.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier Reclamation" />
    </children>
 </AnchorPane>

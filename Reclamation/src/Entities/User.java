@@ -12,34 +12,36 @@ import java.util.Vector;
  *
  * @author KattaX
  */
-
 /**
  *
  * @author admin
  */
 public class User {
+
     private int id_user;
     private String first_Name;
-	private String last_Name;
-	private String user_Name;
-	private String password;
-	private String email;
-	private int phone_number;
-	private String gender;
-	private int CIN;
-	private String account_Date;
-	private String Image_user;
-	private int age;
-        private Vector<Reclamation> reclamations;
+    private String last_Name;
+    private String user_Name;
+    private String classe;
+    private String password;
+    private String email;
+    private int phone_number;
+    private String gender;
+    private int CIN;
+    private String account_Date;
+    private String Image_user;
+    private int age;
+    private Vector<Reclamation> reclamations;
 
     public User() {
     }
 
-    public User(int id_user, String first_Name, String last_Name, String user_Name, String password, String email, int phone_number, String gender, int CIN, String account_Date, String Image_user, int age) {
+    public User(int id_user, String first_Name, String last_Name, String user_Name, String classe, String password, String email, int phone_number, String gender, int CIN, String account_Date, String Image_user, int age) {
         this.id_user = id_user;
         this.first_Name = first_Name;
         this.last_Name = last_Name;
         this.user_Name = user_Name;
+        this.classe = classe;
         this.password = password;
         this.email = email;
         this.phone_number = phone_number;
@@ -48,17 +50,19 @@ public class User {
         this.account_Date = account_Date;
         this.Image_user = Image_user;
         this.age = age;
-	 
+
     }
-	public User(Integer id_user) {
+
+    public User(Integer id_user) {
         this.id_user = id_user;
     }
+
     public User(String first_Name, String last_Name, String email) {
-	id_user = id_user;
+        id_user = id_user;
         this.first_Name = first_Name;
         this.last_Name = last_Name;
-        
-	reclamations = new Vector<Reclamation>();
+
+        reclamations = new Vector<Reclamation>();
     }
 
     public User(int id_user, String first_Name, String last_Name, String email) {
@@ -67,8 +71,6 @@ public class User {
         this.last_Name = last_Name;
         this.email = email;
     }
-
-    
 
     public int getId_user() {
         return id_user;
@@ -96,6 +98,14 @@ public class User {
 
     public String getUser_Name() {
         return user_Name;
+    }
+
+    public String getClasse() {
+        return classe;
+    }
+
+    public void setClasse(String classe) {
+        this.classe = classe;
     }
 
     public void setUser_Name(String user_Name) {
@@ -168,10 +178,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" + "id_user=" + id_user + ", first_Name=" + first_Name + ", last_Name=" + last_Name + ", user_Name=" + user_Name + ", password=" + password + ", email=" + email + ", phone_number=" + phone_number + ", gender=" + gender + ", CIN=" + CIN + ", account_Date=" + account_Date + ", Image_user=" + Image_user + ", age=" + age + ", reclamations=" + reclamations + '}';
+        return "User{" + "id_user=" + id_user + ", first_Name=" + first_Name + ", last_Name=" + last_Name + ", user_Name=" + user_Name + ", classe=" + classe + ", password=" + password + ", email=" + email + ", phone_number=" + phone_number + ", gender=" + gender + ", CIN=" + CIN + ", account_Date=" + account_Date + ", Image_user=" + Image_user + ", age=" + age + ", reclamations=" + reclamations + '}';
     }
-    
+
 }
-
-
-    
