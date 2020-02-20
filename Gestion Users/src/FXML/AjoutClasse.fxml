@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AjoutClassController">
+   <children>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="parent">
+         <children>
+            <VBox alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="143.0" styleClass="sidebar" stylesheets="@stylesheet.css" />
+            <Pane layoutX="143.0" layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="653.0" style="-fx-background-color: #FFF;">
+               <children>
+                  <ImageView fitHeight="135.0" fitWidth="135.0" layoutX="25.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/84871711_1565865906900588_5009461231975661568_n.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="31.0" layoutY="169.0" text="Add class here..">
+                     <font>
+                        <Font name="Impact" size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="studentname" focusColor="#6747cd" labelFloat="true" layoutX="25.0" layoutY="219.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefColumnCount="10" prefHeight="35.0" prefWidth="300.0" promptText="Enter student Name.." unFocusColor="#6747cd">
+                     <font>
+                        <Font name="Book Antiqua" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton fx:id="add_class" buttonType="RAISED" layoutX="118.0" layoutY="453.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#add_c" prefHeight="50.0" prefWidth="300.0" ripplerFill="#0722ff" styleClass="loginBtn" stylesheets="@stylesheet.css" text="Add Student to the Class">
+                     <font>
+                        <Font name="Ebrima Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <FontAwesomeIconView fx:id="close_app" glyphName="CLOSE" layoutX="627.0" layoutY="26.0" onMouseClicked="#close_app" size="15.0" stroke="WHITE" style="-fx-fill: #545454;" />
+                  <ComboBox fx:id="level" layoutX="80.0" layoutY="365.0" onAction="#add_level" prefHeight="25.0" prefWidth="55.0" />
+                  <JFXTextField fx:id="studentLastname" focusColor="#6747cd" labelFloat="true" layoutX="25.0" layoutY="283.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefColumnCount="10" prefHeight="35.0" prefWidth="300.0" promptText="Enter student Last Name.." unFocusColor="#6747cd">
+                     <font>
+                        <Font name="Book Antiqua" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label layoutX="25.0" layoutY="365.0" prefHeight="25.0" prefWidth="55.0" text="Level :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="149.0" layoutY="365.0" prefHeight="25.0" prefWidth="96.0" text="number :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="number" layoutX="225.0" layoutY="365.0" onAction="#addnumber" prefHeight="25.0" prefWidth="55.0" />
+                  <Label layoutX="290.0" layoutY="365.0" prefHeight="25.0" prefWidth="35.0" text="of :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="capacity" layoutX="325.0" layoutY="365.0" onAction="#add_capacity" prefHeight="25.0" prefWidth="55.0" />
+                  <Label layoutX="391.0" layoutY="365.0" prefHeight="25.0" prefWidth="74.0" text="students.">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

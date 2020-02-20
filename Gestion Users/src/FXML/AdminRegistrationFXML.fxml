@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="content2" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminRegistrationController">
+	<children>
+		<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="parent">
+			<children>
+				<VBox alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="sidebar" stylesheets="@stylesheet.css">
+					<children>
+						<ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" smooth="false" translateX="70.0" translateY="150.0">
+							<image>
+								<Image url="@../Images/Charf.png" />
+							</image>
+						</ImageView>
+						<ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" smooth="false" translateX="-155.0" translateY="190.0">
+							<image>
+								<Image url="@../Images/Nada.png" />
+							</image>
+						</ImageView>
+						<ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" smooth="false" translateX="-70.0" translateY="-20.0">
+							<image>
+								<Image url="@../Images/Saief.png" />
+							</image>
+						</ImageView>
+						<ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" smooth="false" translateX="155.0" translateY="20.0">
+							<image>
+								<Image url="@../Images/Med.png" />
+							</image>
+						</ImageView>
+						<ImageView fitHeight="107.0" fitWidth="125.0" pickOnBounds="true" smooth="false" translateX="10.0" translateY="-78.0">
+							<image>
+								<Image url="@../Images/cap.png" />
+							</image>
+						</ImageView>
+						<Label text="TeamMates" textFill="WHITE" translateX="10.0" translateY="-70.0">
+							<font>
+								<Font name="Impact" size="25.0" />
+							</font>
+						</Label>
+						<ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" smooth="false" translateX="-70.0" translateY="-30.0">
+							<image>
+								<Image url="@../Images/Omayma.png" />
+							</image>
+						</ImageView>
+						<ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" smooth="false" translateX="70.0" translateY="-120.0">
+							<image>
+								<Image url="@../Images/Manelle.png" />
+							</image>
+						</ImageView>
+					</children>
+				</VBox>
+				<Pane fx:id="id_reg1" layoutX="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #FFF;">
+					<children>
+						<ImageView fitHeight="104.0" fitWidth="119.0" layoutX="20.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../Images/84871711_1565865906900588_5009461231975661568_n.png" />
+							</image>
+						</ImageView>
+						<Label layoutX="14.0" layoutY="141.0" text="Update the Administration List">
+							<font>
+								<Font name="Impact" size="24.0" />
+							</font>
+						</Label>
+						<Label layoutX="14.0" layoutY="171.0" text="Fill the form for update" textFill="#a3a3a3">
+							<font>
+								<Font name="Ebrima Bold" size="14.0" />
+							</font>
+						</Label>
+						<JFXTextField fx:id="AdminLogin" focusColor="#6747cd" labelFloat="true" layoutX="49.0" layoutY="247.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefColumnCount="10" prefHeight="35.0" prefWidth="300.0" promptText="Enter new Admin Login..." unFocusColor="#6747cd">
+							<font>
+								<Font name="Book Antiqua" size="14.0" />
+							</font>
+						</JFXTextField>
+						<JFXTextField fx:id="PassAdmin" focusColor="#6747cd" labelFloat="true" layoutX="49.0" layoutY="314.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefColumnCount="10" prefHeight="35.0" prefWidth="300.0" promptText="Enter the Password.." unFocusColor="#6747cd">
+							<font>
+								<Font name="Book Antiqua" size="14.0" />
+							</font>
+						</JFXTextField>
+                  <JFXButton fx:id="cr_account" buttonType="RAISED" layoutX="50.0" layoutY="414.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#doRegistration1" prefHeight="50.0" prefWidth="300.0" ripplerFill="#0722ff" styleClass="loginBtn" stylesheets="@stylesheet.css" text="Create Account">
+                     <font>
+                        <Font name="Ebrima Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+					</children>
+				</Pane>
+			</children>
+		</AnchorPane>
+	</children>
+</AnchorPane>

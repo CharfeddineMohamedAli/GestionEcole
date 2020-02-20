@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="content" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <children>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="parent">
+         <children>
+            <VBox alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="sidebar" stylesheets="@stylesheet.css">
+               <children>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" smooth="false" translateX="70.0" translateY="150.0">
+                     <image>
+                        <Image url="@../Images/Charf.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" smooth="false" translateX="-155.0" translateY="190.0">
+                     <image>
+                        <Image url="@../Images/Nada.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" smooth="false" translateX="-70.0" translateY="-20.0">
+                     <image>
+                        <Image url="@../Images/Saief.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" smooth="false" translateX="155.0" translateY="20.0">
+                     <image>
+                        <Image url="@../Images/Med.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="107.0" fitWidth="125.0" pickOnBounds="true" smooth="false" translateX="10.0" translateY="-78.0">
+                     <image>
+                        <Image url="@../Images/cap.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="TeamMates" textFill="WHITE" translateX="10.0" translateY="-70.0">
+                     <font>
+                        <Font name="Impact" size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" smooth="false" translateX="-70.0" translateY="-30.0">
+                     <image>
+                        <Image url="@../Images/Omayma.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" smooth="false" translateX="70.0" translateY="-120.0">
+                     <image>
+                        <Image url="@../Images/Manelle.png" />
+                     </image>
+                  </ImageView>
+               </children></VBox>
+            <Pane layoutX="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #FFF;">
+               <children>
+                  <ImageView fitHeight="135.0" fitWidth="135.0" layoutX="25.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/84871711_1565865906900588_5009461231975661568_n.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="31.0" layoutY="169.0" text="Welcome Back,">
+                     <font>
+                        <Font name="Impact" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="199.0" text="sign in to continue" textFill="#a3a3a3">
+                     <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="username_login" focusColor="#6747cd" labelFloat="true" layoutX="71.0" layoutY="259.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefColumnCount="10" prefHeight="35.0" prefWidth="300.0" promptText="User Name.." unFocusColor="#6747cd">
+                     <font>
+                        <Font name="Book Antiqua" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="password_login" focusColor="#6747cd" labelFloat="true" layoutX="71.0" layoutY="314.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefColumnCount="10" prefHeight="35.0" prefWidth="300.0" promptText="Password..." unFocusColor="#6747cd">
+                     <font>
+                        <Font name="Book Antiqua" size="14.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <Label layoutX="260.0" layoutY="363.0" lineSpacing="1.0" styleClass="forgetBtn" stylesheets="@stylesheet.css" text="Forget Password ? " textFill="#575454" underline="true">
+                     <font>
+                        <Font name="Ebrima Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="btn_login" buttonType="RAISED" layoutX="71.0" layoutY="417.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#login" prefHeight="50.0" prefWidth="300.0" ripplerFill="#0722ff" styleClass="loginBtn" stylesheets="@stylesheet.css" text="Login">
+                     <font>
+                        <Font name="Ebrima Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="246.0" layoutY="479.0" lineSpacing="1.0" styleClass="forgetBtn" stylesheets="@stylesheet.css" text="New User?" textFill="#575454">
+                     <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sign_up" layoutX="322.0" layoutY="478.0" lineSpacing="1.0" onMouseClicked="#gotosignup" styleClass="forgetBtn" text="sign up" textFill="#2f0202" underline="true">
+                     <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <FontAwesomeIconView glyphName="CLOSE" layoutX="380.0" layoutY="19.0" onMouseClicked="#close_app" size="15.0" stroke="WHITE" style="-fx-fill: #545454;" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
