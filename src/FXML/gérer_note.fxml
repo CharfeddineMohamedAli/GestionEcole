@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="content1" prefHeight="551.0" prefWidth="817.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.gérer_note_controller">
+
+    <children>
+        <TableView fx:id="tabnote" layoutX="279.0" layoutY="124.0" prefHeight="329.0" prefWidth="517.0">
+            <columns>
+                <TableColumn fx:id="cin" minWidth="0.0" prefWidth="74.0" text="Cin" />
+                <TableColumn fx:id="nom_etud" prefWidth="102.0" text="Nom étudiant" />
+                <TableColumn fx:id="prenom_etud" prefWidth="121.0" text="prénom étudiant" />
+                <TableColumn fx:id="cc" minWidth="0.0" prefWidth="70.0" text="Note cc" />
+                <TableColumn fx:id="ds" minWidth="0.0" prefWidth="63.0" text="Note ds" />
+                <TableColumn fx:id="exam" minWidth="0.0" prefWidth="86.0" text="Note Examen" />
+            </columns>
+        </TableView>
+        <Label layoutX="9.0" layoutY="353.0" text=" examen :">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="tfexam" layoutX="83.0" layoutY="346.0" prefHeight="35.0" prefWidth="119.0" style="-fx-background-radius: 5em;" />
+        <Button layoutX="12.0" layoutY="481.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="44.0" prefWidth="101.0" style="-fx-background-radius: 5em;" text="          Ajouter" />
+        <Button layoutX="248.0" layoutY="484.0" mnemonicParsing="false" onAction="#Modifier" prefHeight="44.0" prefWidth="112.0" style="-fx-background-radius: 5em;" text="            Modifier" />
+        <ImageView fitHeight="29.0" fitWidth="40.0" layoutX="27.0" layoutY="489.0" pickOnBounds="true" preserveRatio="true">
+            <image>         
+                <Image url="@Res/Images/ajouter.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="30.0" fitWidth="36.0" layoutX="264.0" layoutY="492.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Res/Images/modifier.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="128.0" layoutY="483.0" mnemonicParsing="false" onAction="#Supprimer" prefHeight="44.0" prefWidth="112.0" style="-fx-background-radius: 5em;" text="           Supprimer" />
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="171.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="142.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Res/Images/supprimer.png" />
+            </image>
+        </ImageView>
+        <Pane layoutY="552.0" prefHeight="44.0" prefWidth="836.0" style="-fx-background-color: #6747CD;" />
+        <Button fx:id="retour" layoutX="10.0" layoutY="11.0" minWidth="41.0" mnemonicParsing="false" onAction="#retour1" prefHeight="35.0" prefWidth="82.0" />
+        <ImageView fitHeight="29.0" fitWidth="40.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Res/Images/back-button.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="46.0" layoutY="20.0" text="Retour" />
+    
+        <TextField fx:id="tfcc" layoutX="83.0" layoutY="243.0" prefHeight="35.0" prefWidth="119.0" style="-fx-background-radius: 5em;" />
+        <TextField fx:id="tfds" layoutX="83.0" layoutY="288.0" prefHeight="35.0" prefWidth="119.0" style="-fx-background-radius: 5em;" />
+        <Label layoutX="12.0" layoutY="295.0" text="Note ds :">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="250.0" text="Note cc:">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="tfcin" layoutX="83.0" layoutY="195.0" prefHeight="35.0" prefWidth="119.0" style="-fx-background-radius: 5em;" />
+        <Label layoutX="24.0" layoutY="202.0" prefHeight="21.0" prefWidth="33.0" text="Cin">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <CheckBox fx:id="tri" layoutX="646.0" layoutY="480.0" mnemonicParsing="false" onAction="#Triparnom" prefHeight="30.0" prefWidth="164.0" text="Tri par nom">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </CheckBox>
+        <TextField fx:id="search1" layoutX="538.0" layoutY="69.0" onKeyTyped="#searchcin" prefHeight="30.0" prefWidth="143.0" promptText="Recherche par nom" />
+        <ImageView fitHeight="30.0" fitWidth="36.0" layoutX="508.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Res/Images/icon_chercher.png" />
+            </image>
+        </ImageView>
+    </children>
+
+
+</AnchorPane>

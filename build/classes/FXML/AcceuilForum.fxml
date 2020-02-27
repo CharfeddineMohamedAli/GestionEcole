@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1093.0" styleClass="parent" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AcceuilForumController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1093.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="250.0" styleClass="sidebar1" stylesheets="@stylesheet.css">
+               <children>
+                  <Label prefHeight="5.0" prefWidth="250.0" style="-fx-background-color: #000000;" text="             QandA" textFill="#f2f2f5">
+                     <font>
+                        <Font name="Ebrima Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT">
+                     <children>
+                        <FontAwesomeIconView glyphName="SEARCH" glyphStyle="-fx-fill:#BDBDBD" size="16">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <JFXTextField focusColor="#d7d9e0" prefHeight="25.0" prefWidth="193.0" style="-fx-background-color: #d7d9e0;" unFocusColor="#e1dbdb">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </JFXTextField>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox fx:id="id_afficherTous" alignment="CENTER_LEFT" layoutX="10.0" layoutY="139.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#btn_afficherTous" prefHeight="40.0" prefWidth="250.0" styleClass="btns1">
+                     <children>
+                        <FontAwesomeIconView glyphName="LIST" glyphStyle="-fx-fill:#f8f5f5" size="16">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label text="Tous Les sujets" textFill="#f8f5f5">
+                           <font>
+                              <Font name="Ebrima Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="id_afficherMesSujets" alignment="CENTER_LEFT" layoutX="10.0" layoutY="179.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#btn_afficherTous" prefHeight="40.0" prefWidth="250.0" styleClass="btns1">
+                     <children>
+                        <FontAwesomeIconView glyphName="LIST" glyphStyle="-fx-fill:#f8f5f5" size="16">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label text="Mes sujets" textFill="#f8f5f5">
+                           <font>
+                              <Font name="Ebrima Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="id_ajouter" alignment="CENTER_LEFT" layoutX="10.0" layoutY="219.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#btn_afficherTous" prefHeight="40.0" prefWidth="250.0" styleClass="btns1">
+                     <children>
+                        <FontAwesomeIconView glyphName="USER_PLUS" glyphStyle="-fx-fill:#f8f5f5" size="16">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label text="Ajouter un sujet" textFill="#f8f5f5">
+                           <font>
+                              <Font name="Ebrima Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="id_statistique" alignment="CENTER_LEFT" layoutX="10.0" layoutY="260.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#btn_afficherTous" prefHeight="40.0" prefWidth="250.0" styleClass="btns1">
+                     <children>
+                        <FontAwesomeIconView glyphName="SIGNAL" glyphStyle="-fx-fill:#f8f5f5" size="16">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label text="Statistique" textFill="#f8f5f5">
+                           <font>
+                              <Font name="Ebrima Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <ImageView fitHeight="200.0" fitWidth="249.0">
+                     <image>
+                        <Image url="@great.jpg" />
+                     </image>
+                  </ImageView>
+                  <HBox fx:id="Siteweb" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#btn_afficherTous" prefHeight="40.0" prefWidth="250.0" styleClass="btns1">
+                     <children>
+                        <FontAwesomeIconView glyphName="SIGNAL" glyphStyle="-fx-fill:#f8f5f5" size="16">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <Label text="Consulter notre site web" textFill="#f8f5f5">
+                           <font>
+                              <Font name="Ebrima Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox layoutX="250.0" prefHeight="600.0" prefWidth="843.0">
+               <children>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="843.0" style="-fx-background-color: E6E6FA;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="5.0" prefHeight="40.0" prefWidth="126.0" text="Logged as :" underline="true">
+                           <font>
+                              <Font name="Impact" size="24.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="logged" layoutX="133.0" layoutY="13.0" prefHeight="25.0" prefWidth="160.0" />
+                        <JFXButton layoutX="676.0" layoutY="12.0" onAction="#play" text="Play " />
+                        <JFXButton layoutX="733.0" layoutY="13.0" onAction="#stop" text="Stop" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="content" prefHeight="550.0" prefWidth="795.0" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

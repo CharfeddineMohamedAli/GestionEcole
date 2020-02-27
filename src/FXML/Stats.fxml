@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StatsController">
+    <stylesheets>
+        <URL value="@stats.css" />
+    </stylesheets>
+   <children>
+      <PieChart fx:id="pieChart" layoutX="24.0" layoutY="79.0" prefHeight="242.0" prefWidth="276.0" title="Les réclamations par type" />
+      <PieChart fx:id="pieChartEtat" layoutX="310.0" layoutY="79.0" prefHeight="242.0" prefWidth="276.0" title="Les réclamations par etat" />
+      <Text layoutX="270.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Statistiques" />
+   </children>
+</AnchorPane>

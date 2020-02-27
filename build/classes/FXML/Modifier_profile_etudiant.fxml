@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" fx:id="content" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="671.0" prefWidth="765.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Controller.Modifier_profile_etudiantController">
+   <children>
+      <JFXTextField fx:id="change_first" layoutX="159.0" layoutY="157.0" />
+      <Label layoutX="304.0" layoutY="46.0" textFill="#d11b1bf7">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="change_last" layoutX="155.0" layoutY="217.0" />
+      <JFXTextField fx:id="change_name" layoutX="155.0" layoutY="279.0" />
+      <JFXTextField fx:id="change_email" layoutX="155.0" layoutY="341.0" />
+      <Label layoutX="159.0" layoutY="46.0" prefHeight="50.0" prefWidth="212.0" text="Update the profil :">
+         <font>
+            <Font name="Impact" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="157.0" prefHeight="25.0" prefWidth="96.0" text="First name :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="341.0" prefHeight="17.0" prefWidth="61.0" text="Email :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="279.0" prefHeight="25.0" prefWidth="96.0" text="User name :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="217.0" prefHeight="25.0" prefWidth="96.0" text="Last name :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="405.0" layoutY="157.0" prefHeight="25.0" prefWidth="80.0" text="Number :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="479.0" prefHeight="41.0" prefWidth="118.0" text="Password again :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="408.0" prefHeight="25.0" prefWidth="80.0" text="Password :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="change_number" layoutX="535.0" layoutY="157.0" />
+      <Label layoutX="405.0" layoutY="217.0" prefHeight="25.0" prefWidth="80.0" text="CIN :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="change_cin" layoutX="535.0" layoutY="217.0" />
+      <Label layoutX="405.0" layoutY="279.0" prefHeight="25.0" prefWidth="80.0" text="Age :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="change_age" layoutX="535.0" layoutY="279.0" />
+      <JFXButton fx:id="modifier_user" buttonType="RAISED" layoutX="336.0" layoutY="566.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#modifier_user" prefHeight="50.0" prefWidth="139.0" ripplerFill="#0722ff" styleClass="loginBtn" stylesheets="@stylesheet.css" text="Update">
+         <font>
+            <Font name="Ebrima Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="102.0" fitWidth="109.0" layoutX="617.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/84871711_1565865906900588_5009461231975661568_n.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image_etudiant" fitHeight="135.0" fitWidth="200.0" layoutX="435.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXPasswordField fx:id="change_password" layoutX="155.0" layoutY="408.0" />
+      <JFXPasswordField fx:id="password_repeter" layoutX="159.0" layoutY="484.0" />
+      <FontAwesomeIconView fx:id="image_user" glyphName="IMAGE" layoutX="578.0" layoutY="490.0" onMouseClicked="#btnLoadEventListener" size="20" styleClass="backBtn" wrappingWidth="17.14285209774971" />
+      <Label fx:id="upload_image" layoutX="445.0" layoutY="475.0" onMouseClicked="#btnLoadEventListener" prefHeight="18.0" prefWidth="135.0" text="Upload Your Image" textFill="#a3a3a3" underline="true">
+         <font>
+            <Font name="Book Antiqua Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXBadge?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="506.0" prefWidth="708.0" style="-fx-background-color: #FFFF;" styleClass="&lt;i class=&quot;fas fa-university&quot;&gt;&lt;/i&gt;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AjoutUserController">
+   <children>
+      <Label layoutX="305.0" layoutY="138.0" prefHeight="34.0" prefWidth="247.0" text="Ajouter un utilisateur" textFill="#0e325e">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView />
+      <JFXBadge layoutX="362.0" layoutY="172.0" />
+      <VBox alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="200.0" styleClass="sidebar" stylesheets="@stylesheet.css" />
+      <ImageView fitHeight="102.0" fitWidth="109.0" layoutX="217.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/84871711_1565865906900588_5009461231975661568_n.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

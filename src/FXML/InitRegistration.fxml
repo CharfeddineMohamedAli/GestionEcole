@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="content1" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FirstAndSecondRegistrationController">
+   <children>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="parent">
+         <children>
+            <VBox alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="sidebar" stylesheets="@Res/stylesheet.css">
+               <children>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" smooth="false" translateX="70.0" translateY="150.0">
+                     <image>
+                        <Image url="@Res/Images/Charf.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" smooth="false" translateX="-155.0" translateY="190.0">
+                     <image>
+                        <Image url="@Res/Images/Nada.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" smooth="false" translateX="-70.0" translateY="-20.0">
+                     <image>
+                        <Image url="@Res/Images/Saief.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" smooth="false" translateX="155.0" translateY="20.0">
+                     <image>
+                        <Image url="@Res/Images/Med.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="107.0" fitWidth="125.0" pickOnBounds="true" smooth="false" translateX="10.0" translateY="-78.0">
+                     <image>
+                        <Image url="@Res/Images/cap.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="TeamMates" textFill="WHITE" translateX="10.0" translateY="-70.0">
+                     <font>
+                        <Font name="Impact" size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" smooth="false" translateX="-70.0" translateY="-30.0">
+                     <image>
+                        <Image url="@Res/Images/Omayma.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" smooth="false" translateX="70.0" translateY="-120.0">
+                     <image>
+                        <Image url="@Res/Images/Manelle.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <Pane fx:id="id_reg" layoutX="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #FFF;">
+               <children>
+                  <ImageView fitHeight="104.0" fitWidth="119.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Res/Images/84871711_1565865906900588_5009461231975661568_n.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="14.0" layoutY="127.0" text="Registration Form">
+                     <font>
+                        <Font name="Impact" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="157.0" text="Fill the form for registration" textFill="#a3a3a3">
+                     <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="radio_etudiant" layoutX="88.0" layoutY="246.0" mnemonicParsing="false" onAction="#verifier_etudiant" text="Etudiant" />
+                  <RadioButton fx:id="radio_enseignant" layoutX="88.0" layoutY="283.0" mnemonicParsing="false" onAction="#verifier_enseignant" text="Enseignant" />
+                  <RadioButton fx:id="radio_parent" layoutX="88.0" layoutY="323.0" mnemonicParsing="false" onAction="#verifier_parent" text="Parent" />
+                  <FontAwesomeIconView fx:id="next0" glyphName="ARROW_CIRCLE_RIGHT" layoutX="340.0" layoutY="575.0" onMouseClicked="#gotopage0" size="20" />
+                  <Label layoutX="20.0" layoutY="219.0" prefHeight="17.0" prefWidth="145.0" text="Choose your type :" />
+                  <Label fx:id="id_label_level" layoutX="33.0" layoutY="387.0" prefHeight="17.0" prefWidth="145.0" text="Choisissez votre niveau :" visible="false" />
+                  <JFXComboBox fx:id="id_level" layoutX="207.0" layoutY="383.0" prefHeight="25.0" prefWidth="119.0" visible="false" />
+                  <Label fx:id="sign_in" layoutX="44.0" layoutY="558.0" lineSpacing="1.0" onMouseClicked="#gotosignin" styleClass="forgetBtn" text="sign in" textFill="#2f0202" underline="true">
+                     <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

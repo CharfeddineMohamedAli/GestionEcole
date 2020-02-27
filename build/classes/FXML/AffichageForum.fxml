@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="id_affichage_Forum" prefHeight="533.0" prefWidth="816.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AffichageForumController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="49.0" prefHeight="42.0" prefWidth="785.0" spacing="80.0" style="-fx-background-color: #02030A;">
+         <children>
+            <Label prefHeight="27.0" prefWidth="54.0" text="Titre" textFill="#e7e5e5">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="27.0" prefWidth="124.0" text="Description" textFill="#e7e5e5">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label text="Categorie" textFill="#e7e5e5">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Label>
+            <Label prefHeight="27.0" prefWidth="106.0" text="Date d'ajout" textFill="#e7e5e5">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label layoutX="23.0" layoutY="14.0" prefHeight="27.0" prefWidth="135.0" text="Filtrer par categorie :" textFill="#5b0e0e">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="id_categorie" layoutX="171.0" layoutY="15.0" onAction="#afficherbycategories" prefHeight="25.0" prefWidth="172.0" />
+      <FontAwesomeIconView glyphName="SEARCH" glyphStyle="-fx-fill:#5b0e0e" layoutX="526.0" layoutY="36.0" size="24" wrappingWidth="25.857142448425293" />
+      <JFXTextField fx:id="id_recherche" focusColor="#07102c" layoutX="564.0" layoutY="15.0" onKeyReleased="#rechercher" prefHeight="25.0" prefWidth="193.0" promptText="recherche par nom..." style="-fx-background-color: #fcf6ff;" unFocusColor="#252647">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <ScrollPane layoutX="15.0" layoutY="106.0" prefHeight="383.0" prefWidth="801.0" fx:id="x">
+         <content>
+            <VBox fx:id="pnItems" prefHeight="377.0" prefWidth="790.0" spacing="5.0" style="-fx-background-color: #02030A;">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <Label layoutX="15.0" layoutY="492.0" prefHeight="27.0" prefWidth="135.0" text="Trier par  :" textFill="#5b0e0e">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <JFXCheckBox fx:id="id_nbre_vue" layoutX="107.0" layoutY="497.0" onAction="#trier_par_nbre_vue" text="Nombre de vue" />
+      <JFXCheckBox fx:id="id_date_creation" layoutX="279.0" layoutY="497.0" onAction="#trier_par_date_creation" text="Date de création" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="content" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ViewDemandeStageController">
+    <children>
+        <ImageView fitHeight="59.0" fitWidth="106.0">
+            <image>
+                <Image url="@Res/Images/img.png" />
+            </image>
+        </ImageView>
+        <TableView fx:id="tabledemande" layoutX="4.0" layoutY="83.0" prefHeight="208.0" prefWidth="582.0">
+            <columns>
+                <TableColumn fx:id="sujet" prefWidth="90.0" text="Sujet" />
+                <TableColumn fx:id="description" prefWidth="125.0" text="Description" />
+                <TableColumn fx:id="branche" minWidth="5.0" prefWidth="101.0" text="Branche " />
+                <TableColumn fx:id="LM" prefWidth="105.0" text="Lettre de motivation" />
+                <TableColumn fx:id="CV" prefWidth="63.0" text="CV" />
+                <TableColumn fx:id="adresse" prefWidth="97.0" text="Adresse" />
+            </columns>
+        </TableView>
+        <Button fx:id="trait" layoutX="439.0" layoutY="336.0" mnemonicParsing="false" onAction="#traiter" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: #6747cd;" text="Traiter Demande " textFill="#010003" />
+    </children>
+</AnchorPane>

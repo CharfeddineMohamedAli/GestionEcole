@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anachronpane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Ajout_absenceController">
+   <children>
+      <TextField fx:id="labelabsent" layoutX="126.0" layoutY="239.0" prefHeight="36.0" prefWidth="139.0" style="-fx-background-radius: 5em;" />
+      <Label fx:id="label" layoutX="14.0" layoutY="232.0" prefHeight="50.0" prefWidth="149.0" text="nombre d'Absences">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Button fx:id="mod" layoutX="58.0" layoutY="357.0" mnemonicParsing="false" onAction="#Modifier" prefHeight="42.0" prefWidth="149.0" style="-fx-background-radius: 5em;" text="modifier">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="supprimer" layoutX="58.0" layoutY="423.0" mnemonicParsing="false" onAction="#Supprimer" prefHeight="42.0" prefWidth="149.0" style="-fx-background-radius: 5em;" text="supprimer">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Pane fx:id="cont" layoutY="522.0" prefHeight="42.0" prefWidth="708.0" style="-fx-background-color: #6747CD;" />
+      <ImageView fx:id="content1" fitHeight="98.0" fitWidth="206.0" layoutX="488.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Res/Images/received_193427108711563.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="retour" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#retour" prefHeight="36.0" prefWidth="88.0" text="         Retour">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imgretour" fitHeight="36.0" fitWidth="66.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Res/Images/back-button.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table" layoutX="301.0" layoutY="139.0" prefHeight="320.0" prefWidth="364.0">
+         <columns>
+            <TableColumn fx:id="colocin" prefWidth="61.0" text="cin" />
+            <TableColumn fx:id="nom" prefWidth="93.0" text="Nom" />
+            <TableColumn fx:id="prenom" prefWidth="126.0" text="Prénom" />
+            <TableColumn fx:id="abs" prefWidth="83.0" text="absence" />
+         </columns>
+      </TableView>
+      <Button fx:id="ajouter" layoutX="58.0" layoutY="299.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="42.0" prefWidth="149.0" style="-fx-background-radius: 5em;" text="Ajouter ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="cin" layoutX="14.0" layoutY="182.0" prefHeight="50.0" prefWidth="149.0" text="Cin">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cin1" layoutX="126.0" layoutY="189.0" prefHeight="36.0" prefWidth="139.0" style="-fx-background-radius: 5em;" />
+      <TextField fx:id="recherche" layoutX="333.0" layoutY="465.0" onKeyTyped="#searshcin" />
+      <ImageView fx:id="imgrech" fitHeight="25.0" fitWidth="35.0" layoutX="333.0" layoutY="465.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Res/Images/chrch.png" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="trieabs" layoutX="333.0" layoutY="105.0" mnemonicParsing="false" onAction="#trieparabsence" prefHeight="17.0" prefWidth="124.0" text="trie par absence" />
+      <Button fx:id="mail" layoutX="572.0" layoutY="465.0" mnemonicParsing="false" onMouseClicked="#Mailing" prefHeight="25.0" prefWidth="105.0" text="Mail" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

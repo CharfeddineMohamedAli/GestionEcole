@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ConsulterReclamationAdminController">
+    <stylesheets>
+        <URL value="@/FXML/Res/consulterreclamationadmin.css" />
+    </stylesheets>
+   <children>
+      <JFXTextField fx:id="search" layoutX="67.0" layoutY="69.0" promptText="search" />
+      <TableView fx:id="recs" layoutX="20.0" layoutY="121.0" prefHeight="200.0" prefWidth="560.0">
+        <columns>
+          <TableColumn fx:id="etudiant" prefWidth="75.0" text="Etudiant">
+               <columns>
+                <TableColumn fx:id="nometud" prefWidth="75.0" text="Nom" />
+                  <TableColumn fx:id="prenometud" prefWidth="75.0" text="Prenom" />
+               </columns></TableColumn>
+            <TableColumn fx:id="enseignant" prefWidth="75.0" text="Enseignant">
+               <columns>
+                  <TableColumn fx:id="nomens" prefWidth="75.0" text="Nom" />
+                  <TableColumn fx:id="prenomens" prefWidth="75.0" text="Prenom" />
+               </columns>
+            </TableColumn>
+            <TableColumn fx:id="desc" prefWidth="142.0" text="Description" />
+            <TableColumn fx:id="note" prefWidth="55.0" text="Note" />
+            <TableColumn fx:id="etat" prefWidth="62.0" text="Etat" />
+        </columns>
+      </TableView>
+      <FontAwesomeIconView fx:id="searchbtn" glyphName="SEARCH" layoutX="196.0" layoutY="86.0" />
+      <Text layoutX="283.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" />
+      <JFXButton fx:id="delBtn" disable="true" layoutX="507.0" layoutY="82.0" onAction="#remove" text="Suprimer" />
+      <JFXButton fx:id="editBtn" disable="true" layoutX="427.0" layoutY="82.0" onAction="#update" text="Modifier" />
+      <JFXButton fx:id="print" layoutX="482.0" layoutY="346.0" onAction="#printAll" prefHeight="25.0" prefWidth="98.0" text="Print" />
+      <FontAwesomeIconView glyphName="PRINT" layoutX="501.0" layoutY="363.0" />
+   </children>
+</AnchorPane>

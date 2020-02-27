@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" fx:id="ach" prefHeight="482.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FXMLinterfaceetudController">
+   <children>
+      <TableView fx:id="table2" layoutX="200.0" layoutY="100.0" prefHeight="381.0" prefWidth="286.0">
+         <columns>
+            <TableColumn fx:id="tabsence" prefWidth="169.0" text="matiére" />
+            <TableColumn fx:id="tmatiére" prefWidth="116.0" text="absence" />
+         </columns>
+      </TableView>
+      <ImageView fx:id="logo" fitHeight="81.0" fitWidth="241.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Res/Images/received_193427108711563.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="pany" layoutY="516.0" prefHeight="42.0" prefWidth="706.0" style="-fx-background-color: #6747CD;" />
+   </children>
+</AnchorPane>
